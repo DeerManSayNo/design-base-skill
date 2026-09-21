@@ -1,3 +1,3 @@
 interface:
-  display_name: "设计系统调度"
-  short_description: "从用户任务推导界面，按需建立与演进设计系统，审查组件并验证设计效果"
+  display_name: "设计基础设施"
+  short_description: "让 AI 继承设计依据、治理系统规则、实施界面并验证真实效果"

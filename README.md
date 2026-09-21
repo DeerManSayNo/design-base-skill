@@ -1,19 +1,19 @@
-<h1 align="center">DESIGN BASE SKILL</h1>
+<h1 align="center">DESIGN BASE</h1>
 
 <p align="center">
-  <strong>GIVE YOUR CODING AGENT A DESIGN SYSTEM, NOT A BAG OF UI TRICKS.</strong>
+  <strong>THE DESIGN INFRASTRUCTURE LAYER FOR AI CODING AGENTS.</strong>
 </p>
 
 <p align="center">
+  <a href="https://github.com/DeerManSayNo/design-base-skill/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/DeerManSayNo/design-base-skill?style=for-the-badge&logo=github&color=facc15" /></a>
   <a href="https://github.com/DeerManSayNo/design-base-skill/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/DeerManSayNo/design-base-skill?style=for-the-badge&color=22c55e" /></a>
   <a href="https://github.com/DeerManSayNo/design-base-skill/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/DeerManSayNo/design-base-skill/total?style=for-the-badge&color=f59e0b" /></a>
-  <img alt="Skill" src="https://img.shields.io/badge/AGENT-SKILL-111827?style=for-the-badge" />
-  <img alt="Language" src="https://img.shields.io/badge/LANG-中文-ef4444?style=for-the-badge" />
+  <img alt="Agent Skill" src="https://img.shields.io/badge/AGENT-SKILL-111827?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <strong>从设计意图到规则，从规则到实现，从实现到验证。</strong><br />
-  一套为编码代理打造的模块化设计系统调度 Skill。
+  <strong>让 AI 不只生成页面，更能继承规则、维护一致性、验证结果。</strong><br />
+  为 AI 编码项目建立一套可持续演进的设计基础设施。
 </p>
 
 <p align="center">
@@ -24,45 +24,60 @@
 
 ---
 
-**Design Base Skill** 试图解决一个越来越明显的问题：AI 可以在几秒钟内写出界面，却常常只是在重复熟悉的卡片、渐变、圆角和营销模板。
+AI 已经能在几秒钟内生成一个页面。真正昂贵的问题随之出现：**每次新会话都可能重置设计上下文，每次新需求都可能引入一套新的视觉逻辑。**
 
-它为编码代理增加一层完整的**设计判断能力**。面对新项目、存量产品、组件改造或设计系统治理任务，代理会先识别真实目标、信息关系和既有依据，再决定规则、组件与视觉表达，最后用运行结果验证改动。
+颜色在漂移，间距在分叉，组件在重复，局部修复不断侵蚀整体一致性。页面越来越多，设计秩序却没有随项目一起成长。
 
-这不只是一份“让页面更好看”的提示词。它是一套可以进入真实项目、持续演进、约束实现并接受验证的设计工作流。
+**Design Base** 为编码代理补上这一层缺失的基础设施。它把设计依据、Token、组件契约、共享规则和验证流程组织成可读取、可执行、可治理的项目资产，让 AI 从“完成这张页面”走向“维护这个产品的设计系统”。
 
-> **让每一个界面决定都有依据，让每一次实现都能被检查。**
+> **代码有工程基础设施，AI 生成的界面也应该有设计基础设施。**
 
-## Why Design Base
+<p align="center">
+  <strong>如果你也在解决 AI 界面的一致性与可维护性，Star 这个项目，让这套基础继续生长。</strong>
+</p>
 
-编码代理缺少的通常不是 CSS 能力，而是稳定的设计决策过程。
+## The Missing Layer
 
-- **拒绝无依据的模板拼装**：先理解产品任务、信息优先级与主操作，再选择布局和组件。
-- **尊重现有产品语言**：读取项目主题、Token、组件和设计资料，避免局部改动破坏整体一致性。
-- **从页面升级到系统**：把有效决定沉淀为可复用规则，同时控制共享规则的准入范围。
-- **主动对抗 AI 平均化**：识别多个默认选择叠加形成的模板感，而非机械禁用某种颜色、圆角或渐变。
-- **用结果结束争论**：检查真实渲染、关键状态、响应式表现、交互反馈和视觉一致性。
-- **按需加载上下文**：只读取当前任务需要的模块与参考资料，避免把整套规范一次性塞进上下文。
+一次性 Prompt 可以影响一次输出，设计基础设施负责守住整个项目。
 
-## The Design Engine
+| 只有页面提示词 | 接入 Design Base |
+| --- | --- |
+| 每次任务重新解释风格 | 代理读取项目已有设计依据 |
+| 组件由当前页面临时决定 | Token 与组件契约持续约束实现 |
+| 局部改动悄悄改变全局 | 共享规则有明确准入和作用范围 |
+| “看起来不错”就结束 | 关键状态、响应式与真实渲染必须验证 |
+| 上下文越堆越长 | 模块和参考资料按任务需要加载 |
+| AI 默认审美不断回归 | 产品语义与品牌依据持续参与决策 |
 
-Design Base 将复杂的界面工作压缩成三个连续阶段：
+Design Base 的价值不会停留在第一张页面。项目越长、参与的 Agent 越多、界面变化越频繁，这层基础设施越能减少设计决策丢失和无意识分叉。
 
-| 阶段 | 模块 | 作用 |
+## Four Infrastructure Layers
+
+| 基础设施层 | 核心资产 | 解决的问题 |
 | --- | --- | --- |
-| **01 · FOUNDATION** | `modules/foundation` | 建立设计依据、Token 契约、共享规则和项目设计资产 |
-| **02 · COMPOSE** | `modules/compose` | 把任务、内容与规则落实为页面、组件、样式和交互 |
-| **03 · VERIFY** | `modules/verify` | 验证实现质量、关键状态、响应式表现与设计一致性 |
+| **Design Memory** | 设计依据、品牌方向、项目入口 | 新会话如何继承已经确认的设计决定 |
+| **Rule Governance** | Token、组件契约、共享规则 | 局部决定如何进入系统，同时不污染全局 |
+| **Interface Execution** | 页面结构、组件、样式、交互 | 设计意图如何稳定落实为真实代码 |
+| **Quality Verification** | 状态、响应式、运行截图、审查依据 | 实现结果如何被检查、修正和追踪 |
+
+这四层由三个执行模块持续驱动：
+
+| 阶段 | 模块 | 职责 |
+| --- | --- | --- |
+| **01 · FOUNDATION** | `modules/foundation` | 建立和治理设计记忆、Token 契约与项目规则 |
+| **02 · COMPOSE** | `modules/compose` | 把产品任务和设计规则落实为界面与交互 |
+| **03 · VERIFY** | `modules/verify` | 验证实现质量、关键状态、响应式和设计一致性 |
 
 ```text
-USER INTENT
-    ↓
-PRODUCT CONTEXT
-    ↓
-FOUNDATION → COMPOSE → VERIFY
-    ↓             ↑        │
-DESIGN RULES      └────────┘
-    ↓
-A COHERENT, TESTABLE INTERFACE
+PRODUCT INTENT
+      ↓
+DESIGN MEMORY  ←──────────────┐
+      ↓                       │
+FOUNDATION → COMPOSE → VERIFY │
+      ↓          ↓         ↓  │
+   RULES      INTERFACE   EVIDENCE
+      └──────────┴─────────┘
+             EVOLVE
 ```
 
 <p align="center">
@@ -73,38 +88,53 @@ A COHERENT, TESTABLE INTERFACE
     <img src="assets/mobile-validation.jpg" alt="在应用流程草图上验证移动端界面" width="49%" />
   </a>
 </p>
-<p align="center"><sub>从低保真结构推导，到真实设备上的界面验证。</sub></p>
+<p align="center"><sub>从设计推导、规则沉淀，到真实设备和关键状态验证。</sub></p>
 
-代理只注册一个入口：`SKILL.md`。入口会根据任务类型调度模块，并在确有需要时加载设计推导、架构、规范、审查依据或项目模板。
+代理只需注册 `SKILL.md`。Design Base 会根据任务范围调用对应模块，并在确有需要时读取设计推导、架构、规范、审查依据或项目模板。
 
-## What It Can Handle
+## Why It Stays Useful
 
-- 从零开始建立项目界面与设计基础
-- 在已有设计体系中增加页面或调整流程
-- 修改局部组件、样式、布局和交互
-- 审查响应式、状态覆盖与设计一致性
-- 治理 Token、共享规则和组件契约
-- 识别模板感、通用生成痕迹与无产品依据的视觉选择
-- 为项目建立可维护的模块化设计资产
+Design Base 不是安装后只触发一次的脚手架。它覆盖界面生命周期中反复发生的工作：
+
+- **新项目启动**：建立最小但完整的设计依据、Token 契约和规则索引。
+- **新页面进入系统**：沿用有效决定，在信息关系缺失时完成必要推导。
+- **组件持续演进**：区分局部例外、候选规则和可进入全局的共享默认。
+- **多人或多 Agent 协作**：让设计决定留在项目里，减少对单次对话上下文的依赖。
+- **设计债务治理**：定位历史偏差、规则冲突和缺失状态，控制每次修改的影响范围。
+- **交付前验证**：检查真实渲染、交互反馈、响应式表现和关键状态。
+
+每一次有效设计决定都可以成为下一次任务的起点。Design Base 的长期价值来自这种累积，而非更长的 Prompt。
+
+## Infrastructure Coverage
+
+- 项目设计依据与品牌方向
+- Design Token 与主题契约
+- 组件规则、状态和 API 边界
+- 页面结构、布局与响应式策略
+- 导航、表单、反馈和覆盖层行为
+- 动效、可访问性与内容规则
+- 共享设计规则准入与迁移
+- AI 模板感和通用生成痕迹审查
+- 运行截图、关键状态与实现验证
 
 ## Built Against "AI Look"
 
-Design Base 不用简单的风格黑名单判断设计。紫色、渐变、卡片、圆角和大标题本身都不是问题；真正的问题是它们是否服务于产品、内容与用户任务。
+Design Base 不依赖简单的风格黑名单。紫色、渐变、卡片、圆角和大标题都可以成立，前提是它们来自产品语义、内容关系或品牌表达。
 
-Skill 会要求代理检查：
+它要求代理持续回答：
 
-- 视觉方向是否来自产品语义，而非模型最熟悉的页面公式
-- 信息层级是否支持扫描、比较和行动
-- 组件选择是否符合任务密度和使用频率
-- 品牌表达是否真实进入首屏与核心体验
-- 装饰是否有明确作用，还是只在填充空间
-- 页面是否在真实尺寸和关键状态下仍然成立
+- 视觉方向是否属于这个产品
+- 信息层级是否支持真实任务
+- 组件选择是否匹配使用频率与内容密度
+- 设计决定是否已有依据和明确范围
+- 装饰是否承担功能、品牌或叙事作用
+- 页面在真实尺寸和关键状态下是否仍然成立
 
-目标很直接：**让 AI 生成的界面看起来属于这个产品，而不是属于某个提示词模板。**
+目标很直接：**让 AI 构建的界面拥有产品自己的设计语言，并且经得起下一次迭代。**
 
 ## Install
 
-从 [Latest Release](https://github.com/DeerManSayNo/design-base-skill/releases/latest) 下载 `design-system-v1.0.0.zip`，解压到编码代理的 Skills 目录：
+从 [Latest Release](https://github.com/DeerManSayNo/design-base-skill/releases/latest) 下载 `design-system-v1.0.1.zip`，解压到编码代理的 Skills 目录：
 
 ```text
 design-system/
@@ -118,16 +148,16 @@ design-system/
 
 安装后注册 `design-system/SKILL.md`。内部模块无需单独注册，代理会按任务读取。
 
-## Inside The Skill
+## Inside The Infrastructure
 
 ```text
 design-system/
-├── SKILL.md                         # 唯一调度入口
+├── SKILL.md                         # 设计基础设施入口
 ├── VERSION                          # 当前语义化版本
 ├── agents/
 │   └── openai.yaml                  # Agent 展示元数据
 ├── modules/
-│   ├── foundation/instructions.md   # 规则与设计资产治理
+│   ├── foundation/instructions.md   # 设计记忆与规则治理
 │   ├── compose/instructions.md      # 页面和组件实施
 │   └── verify/instructions.md       # 运行与设计验证
 ├── references/
@@ -136,15 +166,15 @@ design-system/
 │   ├── design-spec.md               # 视觉和交互规则参考
 │   ├── architecture.md              # 设计资产架构
 │   └── shared-rule-review.md        # 共享规则准入检查
-└── templates/                       # 项目设计资产模板
+└── templates/                       # 项目设计基础设施模板
 ```
 
-## Design Principles
+## Principles
 
-1. **任务先于版式**：先确定用户要完成什么，再决定页面长什么样。
-2. **依据先于偏好**：品牌、内容、场景和既有系统共同决定视觉表达。
+1. **任务先于版式**：先确定用户要完成什么，再决定页面如何表达。
+2. **依据先于偏好**：品牌、内容、场景和既有系统共同决定视觉方向。
 3. **规则必须有边界**：局部决定不会自动升级为全局规范。
-4. **实现必须可验证**：截图、交互、状态和响应式表现都属于设计结果。
+4. **实现必须可验证**：截图、交互、状态和响应式都属于设计结果。
 5. **系统必须可演进**：新决定明确适用范围，旧规则与例外保持可追踪。
 6. **上下文保持克制**：资料足以支持决定时停止扩展读取。
 
@@ -154,6 +184,10 @@ design-system/
 
 <sub>Images used under the [Pexels License](https://www.pexels.com/license/): [Tranmautritam](https://www.pexels.com/@tranmautritam/), [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/), and [Akshar Dave](https://www.pexels.com/@akshar-dave/).</sub>
 
+---
+
 <p align="center">
-  <strong>STOP GENERATING PAGES. START BUILDING DESIGN SYSTEMS.</strong>
+  <strong>BUILD THE DESIGN BASE ONCE. LET EVERY INTERFACE INHERIT IT.</strong><br /><br />
+  如果这正是你的 AI 项目缺少的一层，请给仓库一个 Star。<br />
+  它会帮助更多开发者找到一条从“生成页面”走向“建设设计系统”的路径。
 </p>
