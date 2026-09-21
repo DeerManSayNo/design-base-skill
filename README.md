@@ -40,6 +40,7 @@ AI 已经能在几秒钟内生成一个页面。真正昂贵的问题随之出�
 Design Base 采用纯 Markdown 和单入口结构，可以进入你已经在使用的 Agent 工作流：
 
 <p align="center">
+  <img alt="DeerHux" src="https://img.shields.io/badge/DeerHux-DC2626?style=flat-square" />
   <img alt="OpenAI Codex" src="https://img.shields.io/badge/OpenAI_Codex-111827?style=flat-square" />
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square" />
   <img alt="Cursor" src="https://img.shields.io/badge/Cursor-111111?style=flat-square" />
@@ -56,7 +57,7 @@ Design Base 采用纯 Markdown 和单入口结构，可以进入你已经在使�
   <img alt="OpenCode" src="https://img.shields.io/badge/OpenCode-27272A?style=flat-square" />
 </p>
 
-- **OpenAI Codex**、**Claude Code**、**Cursor**：作为 Skill 或项目级指令入口加载。
+- **DeerHux**、**OpenAI Codex**、**Claude Code**、**Cursor**：作为 Skill 或项目级指令入口加载。
 - **GitHub Copilot**、**Gemini CLI**、**Windsurf**：接入各自的 Custom Instructions、Rules 或项目上下文。
 - **Cline**、**Roo Code**、**Kiro**：通过 Rules、Steering 或等价的项目指令机制接入。
 - **Trae**、**Qoder**、**OpenCode**：作为项目规则、Skill 或 `AGENTS.md` 指向的设计入口使用。
