@@ -18,9 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.pexels.com/photo/apple-monitors-326518/">
-    <img src="assets/design-workspace.jpg" alt="双屏网页设计工作台，展示真实的界面设计过程" width="100%" />
-  </a>
+  <img src="assets/design-workspace.jpg" alt="DesignBase 产品首屏：工坊背景与 MAKE IDEAS PHYSICAL 品牌主张" width="100%" />
 </p>
 
 ---
@@ -111,14 +109,10 @@ FOUNDATION → COMPOSE → VERIFY │
 ```
 
 <p align="center">
-  <a href="https://www.pexels.com/photo/white-printer-paper-196645/">
-    <img src="assets/wireframe-process.jpg" alt="纸面上的 UX 线框稿与界面结构推导" width="49%" />
-  </a>
-  <a href="https://www.pexels.com/photo/a-person-holding-black-smartphone-11780441/">
-    <img src="assets/mobile-validation.jpg" alt="在应用流程草图上验证移动端界面" width="49%" />
-  </a>
+  <img src="assets/wireframe-process.jpg" alt="DesignBase 从描述到制造路径的三阶段工作流" width="49%" />
+  <img src="assets/mobile-validation.jpg" alt="DesignBase 真实项目案例与可重复制造结果" width="49%" />
 </p>
-<p align="center"><sub>从设计推导、规则沉淀，到真实设备和关键状态验证。</sub></p>
+<p align="center"><sub>同一套设计基础设施，贯穿品牌表达、工作流与真实项目内容。</sub></p>
 
 代理只需注册 `SKILL.md`。Design Base 会根据任务范围调用对应模块，并在确有需要时读取设计推导、架构、规范、审查依据或项目模板。
 
@@ -211,8 +205,6 @@ design-system/
 ## Versioning
 
 项目遵循[语义化版本](https://semver.org/lang/zh-CN/)。当前版本记录在 [`VERSION`](VERSION)，完整变化见 [`CHANGELOG.md`](CHANGELOG.md)，Git 标签与 GitHub Release 使用 `v<版本号>` 格式。
-
-<sub>Images used under the [Pexels License](https://www.pexels.com/license/): [Tranmautritam](https://www.pexels.com/@tranmautritam/), [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/), and [Akshar Dave](https://www.pexels.com/@akshar-dave/).</sub>
 
 ---
 
