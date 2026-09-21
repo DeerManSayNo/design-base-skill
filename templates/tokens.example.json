@@ -1,0 +1,28 @@
+{
+  "$description": "Structural example only. Values are not an approved project theme. Split top-level groups into project source files and resolve aliases after merging.",
+  "base": {
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": { "value": 4, "unit": "px" },
+        "$description": "Illustrative spacing unit; confirm the project scale before adoption."
+      }
+    }
+  },
+  "semantic": {
+    "space": {
+      "controlGap": {
+        "$type": "dimension",
+        "$value": "{base.space.unit}"
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "iconGap": {
+        "$type": "dimension",
+        "$value": "{semantic.space.controlGap}"
+      }
+    }
+  }
+}

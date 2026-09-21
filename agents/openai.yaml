@@ -1,0 +1,3 @@
+interface:
+  display_name: "设计系统调度"
+  short_description: "从用户任务推导界面，按需建立与演进设计系统，审查组件并验证设计效果"

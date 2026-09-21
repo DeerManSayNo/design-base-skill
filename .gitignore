@@ -1,0 +1,4 @@
+.DS_Store
+.codegraph/
+.evaluation/
+*.zip
