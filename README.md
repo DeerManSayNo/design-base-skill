@@ -8,12 +8,13 @@
   <a href="https://github.com/DeerManSayNo/design-base-skill/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/DeerManSayNo/design-base-skill?style=for-the-badge&logo=github&color=facc15" /></a>
   <a href="https://github.com/DeerManSayNo/design-base-skill/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/DeerManSayNo/design-base-skill?style=for-the-badge&color=22c55e" /></a>
   <a href="https://github.com/DeerManSayNo/design-base-skill/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/DeerManSayNo/design-base-skill/total?style=for-the-badge&color=f59e0b" /></a>
-  <img alt="Agent Skill" src="https://img.shields.io/badge/AGENT-SKILL-111827?style=for-the-badge" />
+  <img alt="Agent Agnostic" src="https://img.shields.io/badge/AGENT-AGNOSTIC-111827?style=for-the-badge" />
 </p>
 
 <p align="center">
   <strong>让 AI 不只生成页面，更能继承规则、维护一致性、验证结果。</strong><br />
-  为 AI 编码项目建立一套可持续演进的设计基础设施。
+  为 AI 编码项目建立一套可持续演进的设计基础设施。<br />
+  纯 Markdown、单入口、零运行时依赖，可无缝接入任何支持 Skill 或指令文件的 Code Agent 与通用 Agent。
 </p>
 
 <p align="center">
