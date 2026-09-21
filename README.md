@@ -14,7 +14,7 @@
 <p align="center">
   <strong>让 AI 不只生成页面，更能继承规则、维护一致性、验证结果。</strong><br />
   为 AI 编码项目建立一套可持续演进的设计基础设施。<br />
-  纯 Markdown、单入口、零运行时依赖，可无缝接入任何支持 Skill 或指令文件的 Code Agent 与通用 Agent。
+  纯 Markdown、单入口、零运行时依赖，可无缝接入主流 Code Agent 与通用 Agent。
 </p>
 
 <p align="center">
@@ -36,6 +36,35 @@ AI 已经能在几秒钟内生成一个页面。真正昂贵的问题随之出�
 <p align="center">
   <strong>如果你也在解决 AI 界面的一致性与可维护性，Star 这个项目，让这套基础继续生长。</strong>
 </p>
+
+## Works With Your Agent
+
+Design Base 采用纯 Markdown 和单入口结构，可以进入你已经在使用的 Agent 工作流：
+
+<p align="center">
+  <img alt="OpenAI Codex" src="https://img.shields.io/badge/OpenAI_Codex-111827?style=flat-square" />
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square" />
+  <img alt="Cursor" src="https://img.shields.io/badge/Cursor-111111?style=flat-square" />
+  <img alt="GitHub Copilot" src="https://img.shields.io/badge/GitHub_Copilot-8957E5?style=flat-square" />
+  <img alt="Gemini CLI" src="https://img.shields.io/badge/Gemini_CLI-4285F4?style=flat-square" />
+  <img alt="Windsurf" src="https://img.shields.io/badge/Windsurf-00C4B4?style=flat-square" />
+</p>
+<p align="center">
+  <img alt="Cline" src="https://img.shields.io/badge/Cline-E34F26?style=flat-square" />
+  <img alt="Roo Code" src="https://img.shields.io/badge/Roo_Code-6D5DFB?style=flat-square" />
+  <img alt="Kiro" src="https://img.shields.io/badge/Kiro-7C3AED?style=flat-square" />
+  <img alt="Trae" src="https://img.shields.io/badge/Trae-2563EB?style=flat-square" />
+  <img alt="Qoder" src="https://img.shields.io/badge/Qoder-0F766E?style=flat-square" />
+  <img alt="OpenCode" src="https://img.shields.io/badge/OpenCode-27272A?style=flat-square" />
+</p>
+
+- **OpenAI Codex**、**Claude Code**、**Cursor**：作为 Skill 或项目级指令入口加载。
+- **GitHub Copilot**、**Gemini CLI**、**Windsurf**：接入各自的 Custom Instructions、Rules 或项目上下文。
+- **Cline**、**Roo Code**、**Kiro**：通过 Rules、Steering 或等价的项目指令机制接入。
+- **Trae**、**Qoder**、**OpenCode**：作为项目规则、Skill 或 `AGENTS.md` 指向的设计入口使用。
+- **其他 Agent**：只要能够读取 Markdown Skill、Rules 或指令文件，就可以加载同一套设计基础设施。
+
+无需安装插件，无需启动服务，无需增加运行时依赖。不同 Agent 只负责找到 `SKILL.md`，内部模块、参考资料和模板继续按任务需要加载。
 
 ## The Missing Layer
 
