@@ -16,6 +16,12 @@
   一套为编码代理打造的模块化设计系统调度 Skill。
 </p>
 
+<p align="center">
+  <a href="https://www.pexels.com/photo/apple-monitors-326518/">
+    <img src="assets/design-workspace.jpg" alt="双屏网页设计工作台，展示真实的界面设计过程" width="100%" />
+  </a>
+</p>
+
 ---
 
 **Design Base Skill** 试图解决一个越来越明显的问题：AI 可以在几秒钟内写出界面，却常常只是在重复熟悉的卡片、渐变、圆角和营销模板。
@@ -58,6 +64,16 @@ DESIGN RULES      └────────┘
     ↓
 A COHERENT, TESTABLE INTERFACE
 ```
+
+<p align="center">
+  <a href="https://www.pexels.com/photo/white-printer-paper-196645/">
+    <img src="assets/wireframe-process.jpg" alt="纸面上的 UX 线框稿与界面结构推导" width="49%" />
+  </a>
+  <a href="https://www.pexels.com/photo/a-person-holding-black-smartphone-11780441/">
+    <img src="assets/mobile-validation.jpg" alt="在应用流程草图上验证移动端界面" width="49%" />
+  </a>
+</p>
+<p align="center"><sub>从低保真结构推导，到真实设备上的界面验证。</sub></p>
 
 代理只注册一个入口：`SKILL.md`。入口会根据任务类型调度模块，并在确有需要时加载设计推导、架构、规范、审查依据或项目模板。
 
@@ -135,6 +151,8 @@ design-system/
 ## Versioning
 
 项目遵循[语义化版本](https://semver.org/lang/zh-CN/)。当前版本记录在 [`VERSION`](VERSION)，完整变化见 [`CHANGELOG.md`](CHANGELOG.md)，Git 标签与 GitHub Release 使用 `v<版本号>` 格式。
+
+<sub>Images used under the [Pexels License](https://www.pexels.com/license/): [Tranmautritam](https://www.pexels.com/@tranmautritam/), [picjumbo.com](https://www.pexels.com/@picjumbo-com-55570/), and [Akshar Dave](https://www.pexels.com/@akshar-dave/).</sub>
 
 <p align="center">
   <strong>STOP GENERATING PAGES. START BUILDING DESIGN SYSTEMS.</strong>
